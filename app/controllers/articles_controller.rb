@@ -1,0 +1,14 @@
+class ArticlesController < ApplicationController
+def index
+    articles = [
+      { id: 123, name: 'The Thingsmain' },
+      
+    ]
+
+    respond_to do |format|
+      format.json do
+        render json: articles
+      end
+    end
+  end
+end
